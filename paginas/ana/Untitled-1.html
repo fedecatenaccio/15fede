@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana</title>
+    
+    <!-- Enlace a la fuente Coolvetica -->
+    <link href="https://fonts.googleapis.com/css2?family=Coolvetica&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fondo de pantalla animado */
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            background: linear-gradient(120deg, #6ad9bc, #c2e9fb);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #444;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Contenedor principal */
+        .container {
+            width: 90%;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-family: 'Coolvetica', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .highlight {
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 0.5rem 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .play-music {
+            margin-top: 1.5rem;
+            padding: 0.7rem 1.2rem;
+            background-color:#6ad9bc;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            transition: background 0.3s ease;
+        }
+
+        .play-music:hover {
+            background-color: #6ad9bc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ana</h1>
+        <p class="highlight">“Gracias por seguir conmigo a pesar de la distancia.”</p>
+        <p>
+            Amo pasar tiempo contigo porque siempre lo disfruto y el tiempo parece volar cuando estamos juntas. Sin exagerar, sos la persona más buena que conozco; nunca he tenido una sola queja de vos como amiga o persona.
+
+Aunque el tiempo y la vida puedan alejarnos, siempre pienso en vos con amor y nostalgia, porque no importa cuánto tiempo pase: cuando volvemos a vernos, todo sigue igual.
+
+Gracias por estar llena de magia y por tener la sonrisa más real y sincera que existe. Espero que siempre estés en todas.
+        </p>
+        <button class="play-music" onclick="openLink()">Toca acá</button>
+    </div>
+
+    <script>
+        // Bloqueo de clic derecho y atajos de teclado
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+                e.preventDefault();
+            }
+        });
+
+        // Redireccionar a la segunda página
+        function openLink() {
+            window.location.href = "Untitled-2.html";
+        }
+    </script>
+</body>
+</html>

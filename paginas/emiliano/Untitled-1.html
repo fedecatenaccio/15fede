@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emiliano</title>
+    
+    <!-- Enlace a la fuente Coolvetica -->
+    <link href="https://fonts.googleapis.com/css2?family=Coolvetica&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fondo de pantalla animado */
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            background: linear-gradient(120deg, #ef6060, #c2e9fb);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #444;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Contenedor principal */
+        .container {
+            width: 90%;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-family: 'Coolvetica', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .highlight {
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 0.5rem 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .play-music {
+            margin-top: 1.5rem;
+            padding: 0.7rem 1.2rem;
+            background-color: #ef6060;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            transition: background 0.3s ease;
+        }
+
+        .play-music:hover {
+            background-color:#ef6060;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Emiliano</h1>
+        <p class="highlight">“Gracias por ser el amigo con el que comparto mis risas más sinceras.”</p>
+        <p>
+            Te odiaba cuando éramos chicos porque no parabas de molestarme, pero con el tiempo aprendí a quererte mucho. Sin duda ahora sos la persona más graciosa que conozco y con la que más me río.
+Aunque actuás como si me odiaras y yo también a veces, sé que un poquito me querés, o al menos eso espero. Yo, por mi parte, valoro infinitamente tu amistad, porque siempre estás ahí, incluso cuando no lo demostrás tanto.
+Aunque mi mamá quiera matarte por tu eterna pereza, posiblemente sos el amigo con el que más recuerdos graciosos tengo. Nunca cambies. 
+<button class="play-music" onclick="openLink()">Toca acá</button>
+    </div>
+
+    <script>
+        // Bloqueo de clic derecho y atajos de teclado
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+                e.preventDefault();
+            }
+        });
+
+        // Redireccionar a la segunda página
+        function openLink() {
+            window.location.href = "Untitled-2.html";
+        }
+    </script>
+</body>
+</html>

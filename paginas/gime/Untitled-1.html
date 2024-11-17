@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Caffaro</title>
+    
+    <!-- Enlace a la fuente Coolvetica -->
+    <link href="https://fonts.googleapis.com/css2?family=Coolvetica&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fondo de pantalla animado */
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            background: linear-gradient(120deg, #fbb2f2, #c2e9fb);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #444;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Contenedor principal */
+        .container {
+            width: 90%;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-family: 'Coolvetica', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .highlight {
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 0.5rem 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .play-music {
+            margin-top: 1.5rem;
+            padding: 0.7rem 1.2rem;
+            background-color:#fbb2f2;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            transition: background 0.3s ease;
+        }
+
+        .play-music:hover {
+            background-color: #fbb2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gimena</h1>
+        <p class="highlight">“Que los años pasen, pero nosotros seamos eternas.”</p>
+        <p>
+            Aunque nos conocemos hace no tanto, siento como si te conociera de toda la vida. Desde que nos hicimos amigas, te volviste irremplazable para mí, tenerte cerca es de los regalos más lindos que me dio la vida.
+            
+            Sos esa persona que ilumina cualquier día con su personalidad, muy directa pero divertida. Admiro no solo lo linda que sos por fuera, sino también lo hermosa que sos en el interior, gracias por estar llena de esa autenticidad y generosidad que te caracteriza.
+            
+            Pienso en vos todos los días, que no nos vemos, que no estás, porque de alguna forma siempre haces falta. Llenaste mi vida de risas, conversaciones que me dan ganas de que nunca terminen y momentos que guardo con mucho amor en mi corazón.
+            
+            Sos la amiga que espero tener para siempre, alguien con quien ojalá pueda compartir no solo el presente, sino también el futuro. Si la vida me da la oportunidad, yo sé que vas a ser esa madrina casi tía que mis hijos van a amar. Uno de mis mayores deseos es que sigamos caminando juntas, apoyándonos, cuidándonos y creando más historias que nos den felicidad.
+            
+            Gracias por ser lo que sos y llenar mi vida de color.
+        </p>
+        <button class="play-music" onclick="openLink()">Toca acá</button>
+    </div>
+
+    <script>
+        // Bloqueo de clic derecho y atajos de teclado
+        document.addEventListener("contextmenu", function(e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener("keydown", function(e) {
+            if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+                e.preventDefault();
+            }
+        });
+
+        // Redireccionar a la segunda página
+        function openLink() {
+            window.location.href = "Untitled-2.html";
+        }
+    </script>
+</body>
+</html>
